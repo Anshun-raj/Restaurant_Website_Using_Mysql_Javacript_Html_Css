@@ -1,0 +1,496 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  flex-direction: row;
+  background-color: grey;
+  width: 100%;
+  padding: 0 20px;
+  position: static;
+}
+
+.header h2 {
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header span {
+  color: red;
+}
+
+.header .nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.header span {
+  color: red;
+}
+
+.header .nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  font-weight: 600;
+}
+
+.header .nav ul a {
+  font-size: 20px;
+  color: #fff;
+  transition: 0.5s all;
+}
+
+.header .nav ul a:hover {
+  color: red;
+  border-bottom: 2px solid #fff;
+}
+
+.header .nav ul .shopping img {
+  width: 20px;
+}
+
+.home {
+  width: 100%;
+  min-height: 646px;
+  background-color: yellow;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+.home .homeInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home .homeInfo .homeLeft {
+  width: 50%;
+  margin: 150px 50px;
+}
+
+.home .homeInfo .homeLeft h3 {
+  font-size: 48px;
+  color: red;
+}
+
+.home .homeInfo .homeLeft p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.home .homeInfo .homeLeft .btn1 {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.home .homeInfo .homeLeft .btn1:hover {
+  transform: scaleX(1.05);
+  background-color: grey;
+}
+
+.home .homeInfo .homeRight {
+  width: 50%;
+  margin: 20px;
+}
+
+.home .homeInfo .homeRight img {
+  width: 86%;
+}
+
+.about {
+  margin: 40px 0;
+  width: 100%;
+  min-height: 646px;
+  background-color: yellow;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+.about .aboutInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.about .aboutInfo .aboutLeft {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.about .aboutInfo .aboutLeft img {
+  width: 85%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.about .aboutInfo .aboutRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.about .aboutInfo .aboutRight h3 {
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: capitalize;
+  color: red;
+  padding: 0 0 10px;
+}
+
+.about .aboutInfo .aboutRight p {
+  width: 80%;
+  font-size: 16.5px;
+  padding: 10px 0;
+}
+
+.about .aboutInfo .aboutRight .btn1 {
+  width: 15%;
+  border: none;
+  padding: 7px 10px;
+  font-weight: bold;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.about .aboutInfo .aboutRight .btn1:hover {
+  background-color: grey;
+  transform: scaleX(1.05);
+}
+
+.product {
+  margin: 40px 0px 0px;
+  width: 100%;
+  height: 646px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: yellow;
+}
+
+.product h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.list card {
+  margin: 40px 0;
+  background-color: #fff;
+  height: 450px;
+  width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.list card img {
+  width: 200px;
+}
+
+.list card .title {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.list card .price {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: red;
+}
+
+.list card .btn {
+  padding: 7.5px 10px;
+  border: none;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.card {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  background-color: #453e3b;
+  height: 100vh;
+  transition: 0.5s;
+}
+.active .card {
+  left: calc(100% - 500px);
+}
+
+.card h2 {
+  color: #e8bc0e;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.card .checkOut {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card .checkOut div {
+  background-color: #e8bc0e;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card .checkOut div:nth-child(2) {
+  background-color: #1c1f25;
+  color: #fff;
+}
+
+.listCard li {
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  color: #fff;
+  row-gap: 10px;
+}
+.listCard li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listCard li img {
+  width: 90%;
+}
+.listCard li button {
+  background-color: #fff5;
+  border: none;
+}
+.listCard .count {
+  margin: 0 10px;
+}
+
+.service {
+  margin: 40px 0px 0px;
+  width: 100%;
+  height: 646px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: yellow;
+}
+
+.service h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+.service .serviceInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.service .serviceInfo .serviceCard {
+  margin: 40px 0;
+  background-color: #fff;
+  height: 450px;
+  width: 350px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.service .serviceInfo .serviceCard img {
+  border-radius: 5px;
+}
+
+.service .serviceInfo .serviceCard h3 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.service .serviceInfo .serviceCard h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.service .serviceInfo .serviceCard span {
+  color: red;
+}
+
+.service .serviceInfo .serviceCard h5 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.service .serviceInfo .serviceCard button {
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.team {
+  margin: 40px 0px 0px;
+  width: 100%;
+  height: 646px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellow;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+.team .teamInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.team .teamInfo .teamCard {
+  margin: 40px 0;
+  background-color: #fff;
+  height: 450px;
+  width: 350px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.team .teamInfo .teamCard h3 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.team .teamInfo .teamCard .socialIcon {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+.team .teamInfo .teamCard .socialIcon i {
+  font-size: 24px;
+  border: 2px solid grey;
+  padding: 2.5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.team .teamInfo .teamCard .btn {
+  margin: 10px 0;
+  background-color: blue;
+  border: none;
+  color: #fff;
+  padding: 7.5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact {
+  margin: 40px 0px 0px;
+  width: 100%;
+  height: 646px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellow;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+.contact .contactInfo {
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 40%;
+  height: 75%;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.contact .contactInfo form input {
+  width: 80%;
+  margin: 30px 50px 20px;
+  height: 4.5vh;
+}
+
+.contact .contactInfo form span {
+  display: block;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.contact .contactInfo form button {
+  position: relative;
+  left: 44%;
+  top: 10%;
+  padding: 7.5px 20px;
+  border: none;
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 20px 0;
+}

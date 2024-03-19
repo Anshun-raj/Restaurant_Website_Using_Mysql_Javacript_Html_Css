@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Website</title>
+    <link rel="icon" type="image/x-icon" href="Image/Icon.jpeg" />
+    <link rel="stylesheet" type="text/css" href="Index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--------Header--------->
+    <div class="header">
+      <h2>Eat<span>ery</span></h2>
+      <div class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+          <div class="shopping">
+            <img src="Image/shopping.svg" />
+            <span class="quantity" id="quan">0</span>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <!-----Home----->
+    <div class="home" id="home">
+      <div class="homeInfo">
+        <div class="homeLeft">
+          <h3>Enjoy our Delicious Meal</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            temporibus distinctio corporis, id libero, culpa fugit ipsum magnam
+            nisi obcaecati veniam autem consequuntur ullam aperiam similique
+            eligendi rerum? Ducimus, asperiores!
+          </p>
+          <button class="btn1" id="btn" onclick="confirm()">
+            Book A Table
+          </button>
+        </div>
+        <div class="homeRight">
+          <img src="./Image/hero.png" />
+        </div>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <h2>About Us</h2>
+      <div class="aboutInfo">
+        <div class="aboutLeft">
+          <img src="./Image/about.jpg" />
+        </div>
+        <div class="aboutRight">
+          <h3>We speak the good food language.</h3>
+          <p id="txt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus quis odio fuga consequatur error repellat repudiandae
+            pariatur minus consequuntur? Voluptatibus, corrupti numquam velit
+            obcaecati illo accusantium officia amet, aperiam dolore odit ab?
+            Consectetur harum consequuntur id sequi adipisci mollitia quis culpa
+            esse voluptatibus doloremque, recusandae vel. Cum maxime ullam,
+            deserunt sapiente consequatur porro quod, possimus quos delectus
+            asperiores distinctio recusandae, amet placeat. Ipsum aperiam
+            tempora, similique exercitationem odit praesentium eos inventore
+            voluptatem voluptas hic, accusantium quod facilis ea deserunt,
+            aspernatur modi cupiditate architecto molestias porro dolore quia?
+            Quos laborum aperiam temporibus magni a, at sit ipsum saepe adipisci
+            corrupti natus quasi assumenda nobis officiis obcaecati suscipit
+            voluptatem optio mollitia neque voluptatibus dolorem in dolor id
+            quod? Animi officiis maxime quam minus neque. Officiis, ullam quia
+            eum et fugiat voluptatum quam odio nisi quas maxime, magnam nobis
+            laboriosam, eligendi nam quod.
+          </p>
+          <p></p>
+          <button class="btn1" id="btn2" onclick="showToggle()">
+            Read More
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product" id="product">
+      <h2>Our Products</h2>
+      <div class="productInfo">
+        <div class="list"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Card</h2>
+      <ul class="listCard"></ul>
+      <div class="checkOut">
+        <div class="total">0</div>
+        <div class="closeShopping">Close</div>
+      </div>
+    </div>
+
+    <div class="service" id="service">
+      <h2>Our Services</h2>
+      <div class="serviceInfo">
+        <div class="serviceCard">
+          <img src="./Image/american.jpeg" />
+          <h3>American Style Services</h3>
+          <h4>Prices:<span>350/-</span></h4>
+          <h5>Book for:<span id="x">0</span></h5>
+          <div>
+            <button id="btn1" onclick="counter1()">+</button>
+            <button id="btn2" onclick="counter2()">-</button>
+          </div>
+        </div>
+        <div class="serviceCard">
+          <img src="./Image/french.jpeg" />
+          <h3>French Style Services</h3>
+          <h4>Prices:<span>300/-</span></h4>
+          <h5>Book for:<span id="y">0</span></h5>
+          <div>
+            <button id="btn3" onclick="counter3()">+</button>
+            <button id="btn4" onclick="counter4()">-</button>
+          </div>
+        </div>
+        <div class="serviceCard">
+          <img src="./Image/chinese.jpeg" />
+          <h3>Chinese Style Services</h3>
+          <h4>Prices:<span>250/-</span></h4>
+          <h5>Book for:<span id="z">0</span></h5>
+          <div>
+            <button id="btn5" onclick="counter5()">+</button>
+            <button id="btn6" onclick="counter6()">-</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team" id="team">
+      <h2>Our Team</h2>
+      <div class="teamInfo">
+        <div class="teamCard">
+          <img src="./Image/chef.jpeg" />
+          <h3>Chef:John Smith</h3>
+          <div class="socialIcon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+          </div>
+          <button class="btn" id="btn4" onclick="Contact1()">
+            Connect Now
+          </button>
+        </div>
+        <div class="teamCard">
+          <img src="./Image/manager.jpeg" />
+          <h3>Manager:Micheal Claw</h3>
+          <div class="socialIcon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+          </div>
+          <button class="btn" id="btn6" onclick="Contact2()">
+            Connect Now
+          </button>
+        </div>
+        <div class="teamCard">
+          <img src="./Image/veter.png" />
+          <h3>Veter:Angelina Jolly</h3>
+          <div class="socialIcon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+          </div>
+          <button class="btn" id="btn7" onclick="Contact3()">
+            Connect Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contactInfo">
+        <form
+          onsubmit=" return verifyPasswrd()"
+          action="info.php"
+          method="post"
+        >
+          <input type="text" name="nm" placeholder="Enter your name" id="nm" />
+          <span id="msg1" style="color: red"></span>
+          <input
+            type="email"
+            name="em"
+            placeholder="Enter your email"
+            id="em"
+          />
+          <span id="msg4" style="color: red"></span>
+          <input
+            type="number"
+            name="age"
+            placeholder="Enter your age"
+            id="ag"
+          />
+          <span id="msg2" style="color: red"></span>
+          <input
+            type="number"
+            name="num"
+            placeholder="Enter your number"
+            id="num"
+          />
+          <span id="msg3" style="color: red"></span>
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="Index.js"></script>
+  </body>
+</html>
